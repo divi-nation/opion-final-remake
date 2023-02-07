@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(143deg, rgb(123, 123, 123), black)
+}
+.cen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup{
+     height: 500px;
+    width: 700px;
+    position: fixed;
+    /* background: linear-gradient(#222, #333); */
+    background-image: url('ios-13-grey-dark-background.jpg'), linear-gradient( 120deg,rgb(0, 0, 0),rgba(72, 72, 72, 0.882));
+    background-blend-mode: overlay;
+
+    padding: 20px;
+    transition: .6s ease-in-out;
+    box-shadow: 0 0 35px 1px rgba(43, 43, 43, 0.902);
+}
+.popup.b{
+    width: 870px;
+}
+.popup.c{
+    width: 850px;
+}
+.popup.d{
+    width: 700px;
+
+
+}
+
+.p_tabs{
+    width: 100%;
+     justify-content: space-evenly;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    
+}
+.p_tab{
+     padding: 10px;
+    background-color: linear;
+    /* background: linear-gradient(45deg, #333, #444); */
+  
+
+
+}
+.p_tab.active{
+  }
+.specs.aa{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+     justify-content: space-evenly;
+     overflow: hidden;
+     transition: .4s ease-in;
+      opacity: 1;
+
+
+}
+.specs.bb{
+         justify-content: space-evenly;
+
+    top: 0;
+    height: 0px;
+    opacity: 0;
+ 
+
+      overflow: hidden;
+ 
+ }
+
+.s_item{
+    height: 200px;
+    width: 150px;
+     flex-direction: column;
+    justify-content: space-between;
+}
+.btn{
+    margin-top: 30px;
+ }
+.btn button{
+    height: 40px;
+    width: 200px;
+     border-radius: 1px;
+     border: none;
+    background: linear-gradient(125deg, #212121, #797979);
+ } 
+ .btn button i{
+    margin-left: 20px;
+    font-size: 13px;
+    transition: .2s cubic-bezier(0.175, 0.885, 0.32, 1.575);
+
+ }
+ .btn button:hover{
+     box-shadow: 0 0 5px 1px rgb(0, 0, 0);
+    border-radius: 5px;
+ }
+ .btn button:hover i{
+    margin-left: 40px;
+ }
+.s_i{
+    height: 150px;
+    width: 150px;
+    border: 1px solid;
+    border-radius: 40px;
+    background: linear-gradient(45deg, #333, #444);
+    /* filter: blur(5px); */
+    transition: .4s ease;
+    border: 1px solid grey;
+}
+.content{
+    height: 300px;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.s_i i{
+    font-size: 70px;
+    transition: .4s ease;
+}
+.u{
+     height: 2px;
+     margin-top: -15px;
+     
+ }
+ .u .a{
+    height: 100%;
+    width: 60px;
+     margin-left: 69px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+
+ 
+    transition: .5s ease-in-out;
+
+    
+ }
+
+ .u .b{
+    height: 100%;
+    width: 85px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 269px;
+    border-radius: 20px;
+    transition: .5s ease-in-out;
+
+    
+ }
+ .u .c{
+    height: 100%;
+    width: 54px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 445px;
+    border-radius: 20px;
+    transition: .5s ease-in-out;
+
+    
+ }
+
+ .u .d{
+    height: 100%;
+    width: 118px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 475px;
+    border-radius: 20px;
+    transition: .5s ease-in-out;
+
+    
+ }
+ .active .s_i{
+    border: 1px solid lime;
+    color: lime !important;
+    box-shadow: 0 0 5px 1px rgb(71, 238, 0);
+  /* background: linear-gradient(45deg, lime, grey); */
+  color: lime;
+
+
+ }
+
+ .active i{
+    color: lime;
+ }
+
